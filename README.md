@@ -16,6 +16,12 @@ Please ensure these libraries are installed in your Python environment before ru
 
 ```bash
 pip install gradio sounddevice soundfile numpy pydub
+```
+## atlas-voice.py
+
+This script creates an interface using the Gradio library that allows users to record audio from their microphone and save the recordings as .wav files. Each recording is paired with a line of text from the voice.txt file. The audio and text pairs are saved in the audio_text_pairs directory.
+
+Here's a detailed walkthrough of the code:
 
 Import necessary libraries - gradio, sounddevice, soundfile, numpy, and os.
 Read lines from the voice.txt file.
@@ -23,7 +29,6 @@ Create a directory (audio_text_pairs) to save audio-text pairs.
 Initialize recording variables: sample rate (fs) and recording duration (seconds).
 Define a function record_fn(action) that handles recording, playback, and saving of audio files based on the user's action. This function also skips phrases that have already been recorded and saved. If all phrases have been recorded, it will display a completion message.
 Finally, it launches a Gradio interface (iface) that connects the record function (record_fn) to the interface's actions (Start Recording, Stop Recording, Play Recording, Save Recording).
-
 ## audio-cleaner.py
 
 This script uses the pydub library to process audio files in the audio_text_pairs directory. It removes silence from each .wav file and overwrites the original file with the trimmed version.
