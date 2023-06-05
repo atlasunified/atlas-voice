@@ -2,6 +2,10 @@
 
 Introducing our comprehensive audio recording and processing tool! This software is a powerful blend of user-friendly interactions and efficient audio manipulations that empower you to record, save, play, and process audio in a streamlined manner. Built using advanced Python libraries such as `gradio`, `sounddevice`, `soundfile`, `numpy`, and `pydub`, it allows you to record your voice, associate each recording with a unique text from a predefined file, and save these pairs for easy reference. But it doesn't stop there! The software also efficiently processes each recorded audio file to eliminate silent portions, ensuring your recordings are clear and concise. Whether you're working on a speech recognition project, building a voiceover portfolio, or exploring the realm of digital sound, this software provides you with the tools to achieve your audio goals. Jump in and experience the seamless harmony of intuitive user interfaces and powerful audio processing!
 
+<p align="center">
+  <img src="Picture1.png" alt="Picture1">
+</p>
+
 ## Required Libraries
 
 To run these scripts, you'll need the following libraries outside the basic Python libraries:
