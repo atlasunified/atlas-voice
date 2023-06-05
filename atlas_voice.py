@@ -61,7 +61,7 @@ def record_fn(action):
         return "Recording saved successfully. Next phrase: " + phrases[current_phrase_idx]
 
     # Return current phrase to display
-    return "## Recording saved successfully. Next phrase: " + phrases[current_phrase_idx]
+    return phrases[current_phrase_idx]
 
 iface = gr.Interface(
     fn=record_fn, 
