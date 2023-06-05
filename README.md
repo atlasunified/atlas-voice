@@ -23,18 +23,19 @@ This script creates an interface using the Gradio library that allows users to r
 
 Here's a detailed walkthrough of the code:
 
-Import necessary libraries - gradio, sounddevice, soundfile, numpy, and os.
-Read lines from the voice.txt file.
-Create a directory (audio_text_pairs) to save audio-text pairs.
-Initialize recording variables: sample rate (fs) and recording duration (seconds).
-Define a function record_fn(action) that handles recording, playback, and saving of audio files based on the user's action. This function also skips phrases that have already been recorded and saved. If all phrases have been recorded, it will display a completion message.
-Finally, it launches a Gradio interface (iface) that connects the record function (record_fn) to the interface's actions (Start Recording, Stop Recording, Play Recording, Save Recording).
+1. Import necessary libraries - gradio, sounddevice, soundfile, numpy, and os.
+2. Read lines from the voice.txt file.
+3. Create a directory (audio_text_pairs) to save audio-text pairs.
+4. Initialize recording variables: sample rate (fs) and recording duration (seconds).
+5. Define a function record_fn(action) that handles recording, playback, and saving of audio files based on the user's action. This function also skips phrases that have already been recorded and saved. If all phrases have been recorded, it will display a completion message.
+6. Finally, it launches a Gradio interface (iface) that connects the record function (record_fn) to the interface's actions (Start Recording, Stop Recording, Play Recording, Save Recording).
+
 ## audio-cleaner.py
 
 This script uses the pydub library to process audio files in the audio_text_pairs directory. It removes silence from each .wav file and overwrites the original file with the trimmed version.
 
 Here's a detailed walkthrough:
 
-Import necessary libraries - pydub.AudioSegment, pydub.silence.detect_nonsilent, functools.reduce, and os.
-Define a function trim_silence(audio) that detects non-silent parts of an audio and trims the silent parts.
-Iterate over all .wav files in the audio_text_pairs directory, and for each file, it trims the silent parts and overwrites the original file with the trimmed version.
+1. Import necessary libraries - pydub.AudioSegment, pydub.silence.detect_nonsilent, functools.reduce, and os.
+2. Define a function trim_silence(audio) that detects non-silent parts of an audio and trims the silent parts.
+3. Iterate over all .wav files in the audio_text_pairs directory, and for each file, it trims the silent parts and overwrites the original file with the trimmed version.
