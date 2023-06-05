@@ -6,12 +6,16 @@ Introducing our comprehensive audio recording and processing tool! This software
 
 To run these scripts, you'll need the following libraries outside the basic Python libraries:
 
-gradio - For creating the user interface.
-sounddevice - For recording audio from the microphone.
-soundfile - For reading and writing sound files.
-numpy - For numerical computations (used here for creating the array to hold the recording).
-os - For operating system dependent functionality, like reading from files and checking if directories exist.
-pydub - For manipulating audio files (used here for trimming silence from audio).
+'gradio' - For creating the user interface.
+
+'sounddevice' - For recording audio from the microphone.
+
+'soundfile' - For reading and writing sound files.
+
+'numpy' - For numerical computations (used here for creating the array to hold the recording).
+
+'pydub' - For manipulating audio files (used here for trimming silence from audio).
+
 Please ensure these libraries are installed in your Python environment before running these scripts. You can install them using pip:
 
 ## atlas-voice.py
